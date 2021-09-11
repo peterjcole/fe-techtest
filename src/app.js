@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+import MultiplicationGrid from './MultiplicationGrid';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Wrapper>
+      <header>
+        <h1>Multipli-what?</h1>
       </header>
-    </div>
+      <p>Choose a number below to see its multiples!</p>
+      <MultiplicationGrid />
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  max-width: 820px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+`;
 
 export default App;
