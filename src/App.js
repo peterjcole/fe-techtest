@@ -8,14 +8,13 @@ function App() {
       <header>
         <h1>Multipli-what?</h1>
       </header>
-      <p>Choose a number below to see its multiples!</p>
       <MultiplicationGrid />
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  max-width: 820px;
+  max-width: 900px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 100px;
